@@ -1,13 +1,13 @@
 export class Category {
-  public category:Array<sting>;
+  public category:string;
   public icon_url:string;
   public id: string;
   public url: string;
   public value: string;
-}
 
-constructor(json:any) {
-    if (json?:any) {
+
+constructor(json?:any) {
+    if (json) {
       this.category = json.category;
       this.icon_url = json.icon_url;
       this.id = json.id;
@@ -20,4 +20,5 @@ constructor(json:any) {
       this.url = '';
       this.value = '';
     }
+  }
 }
